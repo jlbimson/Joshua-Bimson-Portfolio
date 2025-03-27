@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by yousinix
+  Free for personal and commercial use under the MIT license
+  https://github.com/yousinix/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Modified FDM 3D Printer">
+  <meta property="og:description" content="A modified CoreXY FDM 3D printer project.">
+  <meta property="og:image" content="../assets/3dprinter.jpg">
+
+  <title>Modified FDM 3D Printer</title>
+  <meta name="description" content="A modified CoreXY FDM 3D printer project.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Joshua Bimson's Portfolio</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <p><img src="../assets/fullprintersetup.jpg" alt="fullprintersetup" /></p>
+
+<h1 id="modified-3d-printer">Modified 3D Printer</h1>
+
+<p>This is an ongoing personal project with the goal of having a reliable, fast FDM 3D printer suitable for any other personal projects. I plan to update this page as more modifications are made.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ol>
+  <li><a href="#current-specs">Current Specs</a></li>
+  <li><a href="#the-original-printer">The Original Printer</a></li>
+  <li><a href="#early-modifications">Early Modifications</a></li>
+  <li><a href="#adding-capability">Adding Capability</a></li>
+  <li><a href="#in-progress-and-future-plans">In Progress and Future Plans</a></li>
+</ol>
+
+<h2 id="current-specs">Current Specs</h2>
+
+<ul>
+  <li>300mm x 300mm x 300mm build volume</li>
+  <li><a href="https://github.com/KalicoCrew/kalico">Kalico</a> (Klipper fork) firmware</li>
+  <li>500°C hotend</li>
+  <li>120°C bed</li>
+  <li>80°C chamber</li>
+  <li>6-spool multi-material filament changer</li>
+  <li>Eddy current bed probe (Beacon3d)</li>
+</ul>
+
+<h2 id="the-original-printer">The Original Printer</h2>
+
+<p><img src="../assets/vcoreframe.jpg" alt="vcoreframe" /></p>
+
+<p>I started off with a kit build of a RatRig VCore 3.1. I chose this over other options because of the sturdy frame
+made from 3030 extrusions, the 3-point kinematic bed mounts, and simple, but fast CoreXY motion system.</p>
+
+<h2 id="early-modifications">Early Modifications</h2>
+
+<p>There were a couple of modifications I made very quickly after assembling the printer. I made enclosure panels from Polycarbonate sheet,
+which helped keep the chamber temperature above ambient to allow printing materials such as ASA.</p>
+
+<p>I also changed some of the PETG 3D printed components out with aluminum versions. These components included the bed mounts and toolhead. 
+This allowed for a light weight and yet sturdy construction. In addition, I was worried these parts would start to warp in a heated chamber.</p>
+
+<p><img src="../assets/metaltoolhead.jpg" alt="metaltoolhead" /></p>
+
+<p>In order to achieve high print speeds, I installed a high-flow hotend and cooled the extruder and cold side of the filament path using a water cooling loop. Part cooling was achieved through a remote blower fan and flexible duct.</p>
+
+<p><img src="../assets/rearprinterpanel.jpg" alt="rearprinterpanel" /></p>
+
+<p>All of the electronics were mounted to the rear of the printer.</p>
+
+<h2 id="adding-capability">Adding Capability</h2>
+
+<p>After using the printer as-is for some months, I decided to add some more capability to enhance the printer. I replaced the enclosure panels with PIR insulation to allow the chamber to reach higher temperatures. This helps the printer easily print ASA with little to no warp or adhesion issues, and allows for more “engineering” polymers to be printed: PC, PPS, PPA, and similar.</p>
+
+<p><img src="../assets/tradrack.jpg" alt="tradrack" /></p>
+
+<p>I also added a 6-spool multi-material filament changer, which allows for multi-color prints, and makes swapping spools easier and more automated.</p>
+
+<h2 id="in-progress-and-future-plans">In Progress and Future Plans</h2>
+
+<p>Here are the modifications that I am working on currently or have planned for the future:</p>
+
+<ul>
+  <li>Active chamber heating. I plan to use a PTC heater and fans to more rapidly and consistently heat up the print chamber.</li>
+  <li>Re-wiring. I am rewiring the printer using more professional terminal blocks and wire channels. This will help with serviceability.</li>
+  <li>Filament cutter. The N in 1 out filament switcher is not currently reliable because the tip of the filament becomes a blob or string when retracting. A cutter on the toolhead would increase reliability by eliminating that aspect.</li>
+</ul>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Joshua Bimson</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:joshua.bimson@protonmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/joshua-b-3475a6b9"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/yousinix/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
