@@ -4,7 +4,7 @@ description         : >-
                       Welcome to my portfolio! I am a Mechanical Engineer who excels at rapid prototyping of mechanical systems. 
                       I have a history of working in robotics and automation, and am passionate about all things 3D Printing. 
                       Take a look at my portfolio to see what projects I have worked on in the past!
-baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+baseurl             :                      # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : jlbimson/jlbimson.github.io
 remote_theme        : yousinix/portfolYOU
 
