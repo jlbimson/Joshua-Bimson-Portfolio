@@ -10,6 +10,8 @@ weight: 3
 Hi, I am **{{ site.author.name }}**,<br>
 I am a Mechanical Engineer with experience designing and building robotic systems and mechanical components. I am skilled in rapid prototyping using many different technologies, including CAD/CAM, 3D Printing, and CNC machining. 
 
+Access my resume here: [Resume](../Bimson_Resume_2025.pdf)
+
 ## **Education**
 
 I graduated from California State University, Sacramento with a Bachelor of Science degree in Mechanical Engineering in 2021. 
